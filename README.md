@@ -1,4 +1,4 @@
-<img width="1280" height="714" alt="image" src="https://github.com/user-attachments/assets/6eda1226-5b66-4e01-935f-93135dac1523" /># SD2030
+# SD2030
 
 ![Languages](https://img.shields.io/github/languages/top/fptqnk17/FER202?style=flat)
 ![Repo Size](https://img.shields.io/github/repo-size/fptqnk17/FER202?style=flat)
