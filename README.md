@@ -34,6 +34,8 @@
 
 ## skidding 101
 
+  <img src="https://media4.giphy.com/media/7q9TwhbiPhphcEQKLS/giphy.gif?cid=82a1493beg61fn0y7nwclv429yuvkb0cb0jei9c7no3e6gp0&ep=v1_videos_related&rid=giphy.gif&ct=v" style="width:100%; max-width:680px; border-radius:18px; margin-bottom:15px;" />
+
 ```bash
 # Clone this rep
 git clone https://github.com/Ic0u/TS01718-Nguyen-Nam-VueJS.git
@@ -48,10 +50,10 @@ npm run dev
 ### Neovim tut 
 
 ```bash
-# Open the project
+# Open the project nigga
 nvim .
 
-# Or open a specific file
+# Or open a specific file like this imo
 nvim Labs/Lab1/index.html
 ```
 
