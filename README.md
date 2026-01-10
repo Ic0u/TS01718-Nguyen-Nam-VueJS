@@ -1,13 +1,10 @@
-# SD2030
-
-![Languages](https://img.shields.io/github/languages/top/fptqnk17/FER202?style=flat)
-![Repo Size](https://img.shields.io/github/repo-size/fptqnk17/FER202?style=flat)
+#SD2030
+![Languages](https://img.shields.io/github/languages/top/Ic0u/TS01718-Nguyen-Nam-VueJS?style=flat)
+![Repo Size](https://img.shields.io/github/repo-size/Ic0u/TS01718-Nguyen-Nam-VueJS?style=flat)
 
 > All source code about my SD2030 lecture that I learned at FPT Polytechnic HCM Campus.
 
-## 📢 Advertisement
-
-<img src="https://ibb.co/JjGWDmYw" alt="Advertisement" />
+<img src="https://i.ibb.co/m52rfbnV/image.png" alt="Advertisement" />
 
 ---
 
