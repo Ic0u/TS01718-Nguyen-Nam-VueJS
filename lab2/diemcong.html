@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - 22 - Nguyễn Nam</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        .btn-group .btn {
+            border-radius: 0;
+        }
+        .btn-group > .btn-group:first-child .btn {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .btn-group > .btn-group:last-child .btn {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">22 - Nguyễn Nam</h1>
+
+        <div class="btn-group" role="group">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Apple
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">iPhone</a></li>
+                    <li><a class="dropdown-item" href="#">iPad</a></li>
+                    <li><a class="dropdown-item" href="#">MacBook</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #198754; border-color: #198754;">
+                    Samsung
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Galaxy Phone</a></li>
+                    <li><a class="dropdown-item" href="#">Tablet</a></li>
+                    <li><a class="dropdown-item" href="#">Smart TV</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sony
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                    <li><a class="dropdown-item" href="#">Camera</a></li>
+                    <li><a class="dropdown-item" href="#">Headphones</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Đăng nhập
+            </button>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-2">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="loginModalLabel">Đăng nhập/Đăng ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs mb-4" id="loginTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-bold" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-pane" type="button" role="tab" aria-controls="login-pane" aria-selected="true">Đăng nhập</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold" id="register-tab" data-bs-toggle="tab" data-bs-target="#register-pane" type="button" role="tab" aria-controls="register-pane" aria-selected="false">Đăng ký</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="loginTabsContent">
+                        <div class="tab-pane fade show active" id="login-pane" role="tabpanel" aria-labelledby="login-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold">Họ và tên:</label>
+                                    <div class="input-group has-validation">
+                                        <input type="text" class="form-control is-invalid" placeholder="Nhập họ tên" required>
+                                        <span class="input-group-text bg-white border-start-0 text-danger"><i class="bi bi-exclamation-circle"></i></span>
+                                        <div class="invalid-feedback d-block">Vui lòng điền vào trường này</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold">Mật khẩu:</label>
+                                    <div class="input-group has-validation">
+                                        <input type="password" class="form-control is-invalid" placeholder="Nhập mật khẩu" required>
+                                        <span class="input-group-text bg-white border-start-0 text-danger"><i class="bi bi-exclamation-circle"></i></span>
+                                        <div class="invalid-feedback d-block">Vui lòng điền vào trường này</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold">Email:</label>
+                                    <div class="input-group has-validation">
+                                        <input type="email" class="form-control is-valid" placeholder="Nhập email" value="Nhập email">
+                                        <span class="input-group-text bg-white border-start-0 text-success"><i class="bi bi-check-lg"></i></span>
+                                        <div class="valid-feedback d-block text-success">Hợp lệ</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termsCheck">
+                                        <label class="form-check-label text-danger small fw-bold" for="termsCheck">
+                                            Đồng ý với các điều khoản
+                                        </label>
+                                        <div class="text-danger small" style="font-size: 0.75rem;">Tick vào hộp thoại để xác nhận</div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary px-4">Submit</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="register-pane" role="tabpanel" aria-labelledby="register-tab">
+                            <p class="text-muted">Nội dung đăng ký...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-danger px-4" style="background-color: #ef5350;" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
